@@ -19,8 +19,18 @@ class Contractor(Base):
     # מפתח ראשי - מתחיל מ-300 ועולה ב-1 בכל הוספה
     id = Column(Integer, primary_key=True, autoincrement=True)
 
-    # שם הקבלן (עד 15 תווים)
-    name = Column(String(15), nullable=True)
+
+    # שם פרטי הקבלן (עד 15 תווים)
+    first_name = Column(String(15), nullable=True)
+
+    # שם  משפחה הקבלן (עד 15 תווים)
+    last_name = Column(String(15), nullable=True)
+
+    # שם  משתמש של הקבלן (עד 15 תווים)
+    user_name = Column(String(15), nullable=True)
+
+    # סיסמא של הקבלן (עד 15 תווים)
+    password = Column(String(15), nullable=True)
 
     # מספר טלפון של הקבלן (עד 15 תווים)
     phone = Column(String(15), nullable=True)

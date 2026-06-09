@@ -42,3 +42,6 @@ class ContractorConcreteRequest(Base):
 
     # אזור גיאוגרפי (לסינון מהיר לפי אזורים)
     region = Column(String(100), nullable=True)
+
+    # מחיר (לאישןר הלקוח)
+    price = Column(String(100), nullable=True)

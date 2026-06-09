@@ -18,8 +18,8 @@ class Settings:
     """
 
     # כתובת השרת של SQL Server - לרוב localhost או localhost\SQLEXPRESS
-    DB_SERVER: str = os.getenv("DB_SERVER", "localhost\\SQLEXPRESS")
-
+    # DB_SERVER: str = os.getenv("DB_SERVER", "localhost\\SQLEXPRESS")
+    DB_SERVER = "localhost"
     # שם בסיס הנתונים - לפי מה שיצרנו ב-SQL: "beton"
     DB_NAME: str = os.getenv("DB_NAME", "beton")
 

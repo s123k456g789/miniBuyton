@@ -80,4 +80,4 @@ def health_check():
 if __name__ == "__main__":
     import uvicorn
     # הרצת השרת על host 0.0.0.0 ופורט 8000 - אפשר לגשת מכל מקום
-    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8002, reload=True)
